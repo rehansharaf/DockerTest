@@ -17,7 +17,7 @@ public class AppTest {
 	public void testUntitled() throws MalformedURLException {
 
 		ChromeOptions options = new ChromeOptions();
-		URL gridUrl = new URL("http://172.17.0.2:4444/wd/hub");
+		URL gridUrl = new URL("http://localhost:4444/wd/hub");
 
 		WebDriver driver = new RemoteWebDriver(gridUrl, options);
 		driver.get("https://www.google.com/");
